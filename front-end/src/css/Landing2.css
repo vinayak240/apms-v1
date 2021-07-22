@@ -1,0 +1,33 @@
+.Landing{
+    background-color: white;
+}
+
+
+.navbar-brand{
+    letter-spacing: 10px;
+}
+    
+
+/* #tv {
+    
+    width: 100%;
+    height: 80%;
+    padding: 15px;
+    background: white;
+    border-radius: 50% / 10%;
+    color: #2C3E50;
+    text-align: center;
+    text-indent: .1em;
+    border:1px solid lightgray;
+    /* box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0,0,0,0); */
+  
+  /* #tv:before {
+    content: '';
+    position: absolute;
+    top: 10%;
+    bottom: 10%;
+    right: -5%;
+    left: -5%;
+    background: inherit;
+    border-radius: 5% / 50%;
+  } */

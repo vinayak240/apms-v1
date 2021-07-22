@@ -1,0 +1,12 @@
+.CreateActivity div.card {
+    /* border: 10px solid #2C3E50; */
+    -webkit-box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0,0,0,0); 
+    box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0,0,0,0);
+    font-weight: 600;
+    margin-bottom: 50px;
+}
+
+.CreateActivity div.card-header{
+background-color: #2C3E50;
+color: white;
+}
