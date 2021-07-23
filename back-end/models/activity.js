@@ -1,45 +1,44 @@
-const mongoose = require('mongoose');
-const config = require('../config/database');
-const User = require('../models/user');
+const mongoose = require("mongoose");
+const config = require("../config/database");
+const User = require("../models/user");
 
 // User Schema
 const activitySchema = mongoose.Schema({
   name: {
     type: String,
-    required:true
+    required: true,
   },
   images: [String],
   point: {
     type: Number,
-    required:true
+    required: true,
   },
-  hours:{
+  hours: {
     type: Number,
-    required:true
+    required: true,
   },
   desc: {
     type: String,
-    required:true
+    required: true,
   },
   students: [
     {
-        type: mongoose.Schema.Types.ObjectId,
-        ref: "User",
-        default: null
-    }
-],
+      type: mongoose.Schema.Types.ObjectId,
+      ref: "User",
+      default: null,
+    },
+  ],
   completed: [
     {
-        type: mongoose.Schema.Types.ObjectId,
-        ref: "User",
-        default: null
-    }
+      type: mongoose.Schema.Types.ObjectId,
+      ref: "User",
+      default: null,
+    },
   ],
-  bookmarked:{
-    type:Boolean,
-    default:false
-  }
+  bookmarked: {
+    type: Boolean,
+    default: false,
+  },
 });
 
-module.exports = mongoose.model('Activity', activitySchema);
-
+module.exports = mongoose.model("Activity", activitySchema);
